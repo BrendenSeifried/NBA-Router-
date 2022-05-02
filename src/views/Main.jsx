@@ -21,7 +21,7 @@ export default function Main() {
   return (
     <>
       {data.map((item) => (
-        <CharacterList item={item} />
+        <CharacterList key={item.id} item={item} />
       ))}
     </>
   );

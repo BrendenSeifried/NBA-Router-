@@ -7,10 +7,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/character/:id">
+        <Route path="/:id">
           <CharacterCard />
         </Route>
-        <Route exact path="/">
+        <Route path="/">
           <Main />
         </Route>
       </Switch>
