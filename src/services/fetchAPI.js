@@ -4,3 +4,12 @@ export async function fetchRnM() {
   console.log(RnM);
   return RnM.results;
 }
+
+export async function fetchID(id) {
+  const response = await fetch(
+    `https://rickandmortyapi.com/api/character/${id}`
+  );
+  const RnM = await response.json();
+  console.log(RnM);
+  return RnM.results;
+}

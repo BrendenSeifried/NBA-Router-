@@ -1,24 +1,5 @@
-// import React, { useEffect } from 'react';
-// import { fetchRnM } from '../services/fetchAPI';
-
-// export default function Main() {
-//   const [data, setData] = useEffect([]);
-//   const [load, setLoad] = useEffect(true);
-
-//   useEffect(() => {
-//     const fetchApi = async () => {
-//       const resp = await fetchRnM();
-//       console.log(resp);
-//       setData(resp);
-//       setLoad(false);
-//     };
-//     fetchApi();
-//   }, []);
-
-//   return <div>{load ? <h1>Loading</h1> : <h1>Loaded</h1>}</div>;
-// }
-
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import CharacterList from '../components/CharacterList';
 import { fetchRnM } from '../services/fetchAPI';
 
