@@ -7,10 +7,9 @@ export default function CharacterList() {
   const [data, setData] = useState([]);
   const [load, setLoad] = useState(true);
 
-  const { id } = useParams();
   const { url, path } = useRouteMatch();
-  console.log('url in MovieList', url);
-  console.log('path in MovieList', path);
+  console.log('url = ', url);
+  console.log('path = ', path);
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -20,7 +19,7 @@ export default function CharacterList() {
       setLoad(false);
     };
     fetchApi();
-  }, [id]);
+  }, []);
 
   if (load) return <h1>Loading</h1>;
 

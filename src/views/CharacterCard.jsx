@@ -7,7 +7,6 @@ export default function CharacterCard() {
   const [char, setChar] = useState({});
   const history = useHistory('');
 
-  console.log(id);
   useEffect(() => {
     const fetchCharacter = async () => {
       const info = await fetchID(id);
