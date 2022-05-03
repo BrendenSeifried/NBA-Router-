@@ -11,6 +11,9 @@ export default function CharacterCard() {
     const fetchCharacter = async () => {
       const info = await fetchID(id);
       setChar(info);
+      // setChar([id]);
+
+      console.log(info);
     };
     fetchCharacter();
   }, [id]);
