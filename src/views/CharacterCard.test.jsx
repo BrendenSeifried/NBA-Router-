@@ -10,7 +10,7 @@ describe('linky stuffs', () => {
         <App />
       </MemoryRouter>
     );
-    // screen.getByText(/loading/i);
+    screen.getByText(/loading/i);
     screen.debug();
 
     const link = await screen.findByText('Name: Rick Sanchez (Alive)');

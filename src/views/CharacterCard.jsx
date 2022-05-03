@@ -11,7 +11,6 @@ export default function CharacterCard() {
   useEffect(() => {
     const fetchCharacter = async () => {
       const info = await fetchID(id);
-      console.log(info);
       setChar(info);
     };
     fetchCharacter();
