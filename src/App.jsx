@@ -6,18 +6,14 @@ import Main from './views/Main';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        {/* <Route path="char/:id">
-          <CharacterCard />
-        </Route> */}
-        {/* <Route path="/char">
-          <CharacterList />
-        </Route> */}
-        <Route path="/">
-          <Main />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <Route path="/char">
+        <CharacterList />
+      </Route>
+
+      <Route path="/">
+        <Main />
+      </Route>
+    </Switch>
   );
 }

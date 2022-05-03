@@ -7,13 +7,11 @@ export default function CharacterCard() {
   const [char, setChar] = useState({});
   const history = useHistory('');
 
+  console.log(id);
   useEffect(() => {
     const fetchCharacter = async () => {
       const info = await fetchID(id);
       setChar(info);
-      // setChar([id]);
-
-      console.log(info);
     };
     fetchCharacter();
   }, [id]);
@@ -24,7 +22,7 @@ export default function CharacterCard() {
 
   return (
     <article>
-      <img alt="image of character" src={char.image} />
+      <img alt={`${char.name}`} src={char.image} />
       <h1>Name: {char.name}</h1>
       <h3>
         Specifics: {char.gender} {char.species}
