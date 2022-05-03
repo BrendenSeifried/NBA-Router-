@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import CharacterList from '../components/CharacterList';
 import { fetchRnM } from '../services/fetchAPI';
 
