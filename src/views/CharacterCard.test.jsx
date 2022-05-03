@@ -6,7 +6,7 @@ import App from '../App';
 describe('linky stuffs', () => {
   it('selects link then goes to character details page', async () => {
     render(
-      <MemoryRouter initialEntires={['/character/1']}>
+      <MemoryRouter initialEntires={['/1']}>
         <App />
       </MemoryRouter>
     );

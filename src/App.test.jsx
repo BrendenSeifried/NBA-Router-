@@ -16,20 +16,3 @@ describe('First test', () => {
     expect(testOne).toBeInTheDocument();
   });
 });
-
-// describe('linky stuffs', () => {
-//   it('selects link then goes to character details page', async () => {
-//     render(
-//       <MemoryRouter>
-//         <App />
-//       </MemoryRouter>
-//     );
-//     screen.getByText(/loading/i);
-//     screen.debug();
-
-//     const link = await screen.findByText('Name: Rick Sanchez (Alive)');
-//     userEvent.click(link);
-
-//     await screen.findByAltText('image of character');
-//   });
-// });
