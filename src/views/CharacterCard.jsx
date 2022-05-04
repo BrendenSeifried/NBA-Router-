@@ -26,7 +26,7 @@ export default function CharacterCard() {
       <h3>
         Specifics: {char.gender} {char.species}
       </h3>
-      <button onClick={goBack}>Return to home page.</button>
+      <button onClick={goBack}>Return to Main page.</button>
     </article>
   );
 }
