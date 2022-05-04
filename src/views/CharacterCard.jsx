@@ -16,7 +16,7 @@ export default function CharacterCard() {
   }, [id]);
 
   const goBack = async () => {
-    history.push(`/`);
+    history.push(`/char`);
   };
 
   return (
